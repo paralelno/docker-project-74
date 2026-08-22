@@ -7,11 +7,14 @@ app/node_modules
 *.log
 .cache
 app/.cache
+.npm
+app/.npm
+.local
+app/.local
+app/.pnpm-store
 build
 dist
 *.sqlite
-app/.local
-app/.pnpm-store
 .idea
 .vscode
 .env

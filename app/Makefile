@@ -1,10 +1,11 @@
-setup: install db-migrate
+setup: install
 
 install:
 	pnpm install
 
+# Приложение применяет миграции само при старте (server/plugins/db.js),
+# отдельного npm-скрипта migrate в проекте нет.
 db-migrate:
-	pnpm run migrate
 
 build:
 	pnpm run build

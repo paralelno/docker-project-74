@@ -8,6 +8,8 @@ app/node_modules/
 *.log
 .cache/
 app/.cache/
+.npm/
+app/.npm/
 build/
 dist/
 
