@@ -1,0 +1,12 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.19.0
+2 info using node@v26.7.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/root/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm start --watch --verbose-watch --ignore-watch=node_modules .git .sqlite
+7 verbose argv "start" "--" "--watch" "--verbose-watch" "--ignore-watch=node_modules .git .sqlite"
+8 verbose logfile logs-max:10 dir:/root/.npm/_logs/2026-08-22T22_04_05_674Z-
+9 verbose logfile /root/.npm/_logs/2026-08-22T22_04_05_674Z-debug-0.log
+10 warn Unknown env config "manage-package-manager-versions". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+11 silly logfile done cleaning log files

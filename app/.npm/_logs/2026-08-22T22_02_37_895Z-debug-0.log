@@ -1,0 +1,35 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.19.0
+2 info using node@v26.7.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/root/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm i pnpm@11.22.0
+7 verbose argv "i" "--global" "pnpm@11.22.0"
+8 verbose logfile logs-max:10 dir:/root/.npm/_logs/2026-08-22T22_02_37_895Z-
+9 verbose logfile /root/.npm/_logs/2026-08-22T22_02_37_895Z-debug-0.log
+10 silly packumentCache heap:4395630592 maxSize:1098907648 maxEntrySize:549453824
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest pnpm@11.22.0
+14 silly packumentCache full:https://registry.npmjs.org/pnpm cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/npm 395ms
+16 http fetch GET 200 https://registry.npmjs.org/pnpm 468ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/pnpm set size:undefined disposed:false
+18 silly placeDep ROOT pnpm@11.22.0 OK for:  want: 11.22.0
+19 silly reify moves {}
+20 http cache pnpm@https://registry.npmjs.org/pnpm/-/pnpm-11.22.0.tgz 0ms (cache hit)
+21 silly tarball no local data for pnpm@https://registry.npmjs.org/pnpm/-/pnpm-11.22.0.tgz. Extracting by manifest.
+22 http fetch GET 200 https://registry.npmjs.org/pnpm/-/pnpm-11.22.0.tgz 915ms (cache miss)
+23 silly ADD node_modules/pnpm
+24 verbose cwd /root
+25 verbose os Linux 7.0.0-29-generic
+26 verbose node v26.7.0
+27 verbose npm  v11.19.0
+28 notice
+28 notice New [31mmajor[39m version of npm available! [31m11.19.0[39m -> [34m12.0.2[39m
+28 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v12.0.2[39m
+28 notice To update run: [4mnpm install -g npm@12.0.2[24m
+28 notice  { force: true, Symbol(proc-log.meta): true }
+29 verbose exit 0
+30 info ok

@@ -1,0 +1,27 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.19.0
+2 info using node@v26.7.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/root/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm i pnpm@11.22.0
+7 verbose argv "i" "--global" "pnpm@11.22.0"
+8 verbose logfile logs-max:10 dir:/root/.npm/_logs/2026-08-22T22_03_28_600Z-
+9 verbose logfile /root/.npm/_logs/2026-08-22T22_03_28_600Z-debug-0.log
+10 silly packumentCache heap:4395630592 maxSize:1098907648 maxEntrySize:549453824
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest pnpm@11.22.0
+14 silly packumentCache full:https://registry.npmjs.org/pnpm cache-miss
+15 http cache https://registry.npmjs.org/pnpm 12ms (cache hit)
+16 silly packumentCache full:https://registry.npmjs.org/pnpm set size:5563709 disposed:false
+17 silly placeDep ROOT pnpm@11.22.0 OK for:  want: 11.22.0
+18 silly reify moves {}
+19 http cache pnpm@https://registry.npmjs.org/pnpm/-/pnpm-11.22.0.tgz 0ms (cache hit)
+20 silly ADD node_modules/pnpm
+21 verbose cwd /root
+22 verbose os Linux 7.0.0-29-generic
+23 verbose node v26.7.0
+24 verbose npm  v11.19.0
+25 verbose exit 0
+26 info ok
