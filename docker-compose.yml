@@ -1,9 +1,10 @@
 services:
   app:
-    build: .
+    image: paralelnodev/docker-project-74
+    build:
+      context: .
+      dockerfile: Dockerfile.production
     working_dir: /app
     environment:
       - CI=true
-    volumes:
-      - ./app:/app
     command: make test

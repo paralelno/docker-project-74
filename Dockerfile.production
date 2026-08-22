@@ -1,0 +1,20 @@
+FROM node:26
+
+WORKDIR /app
+
+RUN npm i -g pnpm@11.22.0
+
+# Важно для кеширования слоев
+COPY app/package.json package.json
+COPY app/pnpm-lock.yaml pnpm-lock.yaml
+COPY app/pnpm-workspace.yaml pnpm-workspace.yaml
+
+RUN pnpm install --frozen-lockfile
+
+COPY app/. .
+
+EXPOSE 8080
+ENV NODE_ENV=production
+RUN make build
+
+CMD make start
