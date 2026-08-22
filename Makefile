@@ -1,16 +1,18 @@
+COMPOSE := docker compose
+
 .PHONY: ci test dev up run-setup
 
 ci:
-	docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
+	$(COMPOSE) -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
 
 test:
-	docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
+	$(COMPOSE) -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
 
 dev:
-	docker-compose up
+	$(COMPOSE) up
 
 up:
-	docker-compose up
+	$(COMPOSE) up
 
 run-setup:
-	docker-compose run --rm app make setup
+	$(COMPOSE) run --rm app make setup
