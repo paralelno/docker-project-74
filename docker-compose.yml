@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    working_dir: /app
+    environment:
+      - CI=true
+    volumes:
+      - ./app:/app
+    command: make test
