@@ -1,8 +1,10 @@
 services:
   app:
+    # dev-состав: пересобираем образ из Dockerfile.production
+    # (базовый образ + зависимости), но запускаем в dev-режиме.
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.production
     command: make dev
     ports:
       - "8080:8080"
@@ -14,13 +16,7 @@ services:
     ports:
       - "80:80"
       - "443:443"
-    volumes:
-      - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_data:/data
-      - caddy_config:/config
     depends_on:
       - app
-
-volumes:
-  caddy_data:
-  caddy_config:
+    volumes:
+      - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
