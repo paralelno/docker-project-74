@@ -1,1 +1,18 @@
+# не копировать в образ ничего лишнего
+.git
+.gitignore
+.github
 node_modules
+app/node_modules
+*.log
+.cache
+app/.cache
+build
+dist
+*.sqlite
+app/.local
+app/.pnpm-store
+.idea
+.vscode
+.env
+app/.env

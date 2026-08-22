@@ -1,2 +1,21 @@
-# Local overrides — never commit real credentials
+# Local overrides / secrets — never commit real credentials
 .env
+app/.env
+
+# build artifacts & caches
+node_modules/
+app/node_modules/
+*.log
+.cache/
+app/.cache/
+build/
+dist/
+
+# local data
+*.sqlite
+app/.local/
+app/.pnpm-store/
+
+# IDE
+.idea/
+.vscode/
